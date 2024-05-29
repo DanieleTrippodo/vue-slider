@@ -31,3 +31,60 @@
     text-align: right;
     color: white;
 }
+
+
+
+
+
+
+/* Aggiunti da me */
+html{
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+
+button {
+    height: 50%;
+    width: 92%;
+    display: block;
+    padding: 10px;
+    /* margin: 5px 0; */
+    font-size: 16px;
+    background-color: #00ffdd;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-left: 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+button:hover {
+    background-color: #3ed4b4;
+    color: #000000;
+
+    border: black .2px solid;
+}
+
+
+
+.bottone-sopra{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.bottone-sotto{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
