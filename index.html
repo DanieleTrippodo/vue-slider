@@ -19,19 +19,17 @@
 
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
-                <button class="bottone-sopra left-btn">&uarr;</button> <!-- Bottone - Indietro -->
+                <button class="bottone-sopra left-btn" @click="prevSlide">&uarr;</button> <!-- Bottone - Indietro -->
                 
                 <div class="item">
-                    <img src="img/01.webp" alt="Spiderman" />
+                    <img :src="slides[currentSlide].image" :alt="slides[currentSlide].title" />
                     <div class="text">
-                        <h3>Spiderman</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
-                            tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam
-                            omnis, magnam dolores dolorum corporis.</p>
+                        <h3>{{ slides[currentSlide].title }}</h3>
+                        <p>{{ slides[currentSlide].text }}</p>
                     </div>
                 </div>
                 
-                <button class="bottone-sotto right-btn">&darr;</button> <!-- Bottone - Avanti -->
+                <button class="bottone-sotto right-btn" @click="nextSlide">&darr;</button> <!-- Bottone - Avanti -->
             </div>
         </div>
     </div>

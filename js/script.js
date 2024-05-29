@@ -30,6 +30,19 @@ createApp({
     };
 },
 
-/* todo dobbiamo fare un metodo che ci permette di ciclare le array con un ciclo */
+
+// # funzioni VUE ------------------------------------------------------------------------------------------
+
+methods: {
+    /* avanti */
+    nextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+    },
+
+    /* indietro */
+    prevSlide() {
+        this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    }
+}
 
 }).mount('#app');
